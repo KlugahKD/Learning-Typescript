@@ -1,7 +1,7 @@
  var main = "hhhhhhhh!";
 console.log(main);
 
-var myName = "Daniel Klugah";
+var myName = "Emmanuel Bondzie";
 console.log("My name is " + myName);
 
 var age = 19;
