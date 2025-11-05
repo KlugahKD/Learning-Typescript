@@ -1,4 +1,4 @@
- var main = "Hello, World!";
+ var main = "hhhhhhhh!";
 console.log(main);
 
 var myName = "Daniel Klugah";
