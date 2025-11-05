@@ -1,8 +1,12 @@
  var main = "hhhhhhhh!";
 console.log(main);
 
-var myName = "Daniel Klugah";
+var myName = "Emmanuel Bondzie";
 console.log("My name is " + myName);
 
-var myAge = 30;
-console.log("I am " + myAge);
+var Hello
+console.log;
+var myname ="Hajia Rashid"
+var age = 56g
+var complextion = 'dark'
+
