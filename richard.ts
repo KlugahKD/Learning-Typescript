@@ -47,6 +47,52 @@ enum ProductStatus {
 function displayProductStatus(status: ProductStatus): void {
     console.log(`The product status is: ${status}`);
 }
+
 displayProductStatus(ProductStatus.Active);
 displayProductStatus(ProductStatus.Inactive);
 displayProductStatus(ProductStatus.Pending);
+
+
+//Exploring any and unknown types
+let data: unknown = 10;
+data.tofixed();
+
+if (typeof data === "number") {
+    console.log(data.toFixed());
+}
+
+let flexibleData: any = 20;
+flexibleData.toFixed();
+
+
+
+
+
+//Using the generic function
+function getItemDetails<T>(item: T): T {
+    return item;
+}
+
+let stringItem = getItemDetails<string>("Sample String Item");
+console.log(stringItem);
+
+let numberItem = getItemDetails<number>(100);
+console.log(numberItem);
+
+
+
+//Utility Types
+type PartialProduct {
+    id: number;
+    name: string;
+    price: number;
+}
+
+let partialProduct: Partial<PartialProduct> = {
+    name: "Partial Product",
+};
+
+let partialProduct2: Partial<PartialProduct> = {
+    id: 2,
+    price: 150.00,
+};
