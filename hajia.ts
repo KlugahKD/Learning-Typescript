@@ -1,7 +1,7 @@
 // basic types,Arrays, and tuples //
 
 // Basic Variables //
-let productName:string;
+export const productName1 = "string";
 let quantity:number;
 let isInStock:boolean;
 
@@ -64,7 +64,7 @@ Inactive,
 Pending
 }
 
-function displayStatusEnum(status: ProductStatus): void {
+function displayEnum(status: ProductStatus): void {
   switch (status) {
     case ProductStatus.Active:
       console.log("Product is active.");
@@ -83,8 +83,25 @@ displayStatusEnum(ProductStatus.Inactive);
 displayStatusEnum(ProductStatus.Pending);
  
 // Unknown //
-let data: unknown=7;
+let data: unknown = 7;
+if (typeof data === "number") 
+  console.log(data.toFixed())
 
-   
+let flexibleData : any = "helllo"
+console.log(flexibleData.toFixed());
+
+function getItemDetails<T>(item: T): T {
+  return item;
+}
+console.log(getItemDetails("hajia"));
+console.log(getItemDetails(66));
+console.log(getItemDetails(newProduct));
+
+ let productUpdate: Partial<Product> = {
+  price: 1200,
+  description: "Updated product description with discount"
+};
+
+console.log(productUpdate);
 
 
